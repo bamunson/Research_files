@@ -1,0 +1,36 @@
+These are the python scripts developed/used during my research.
+Below is a brief description of each one. The data is not included because of
+the size limits in GitHub, but can be found in the "munson" external drives.
+
+---Octo2Yt.py---
+Developed by Sagiv Shiber and modified by Brad Munson to work in Python 3.6+
+It has some dependencies, but they should all be easily available on Conda/pip.
+This doesn't have to be modified much, it's just used to read Octo-Tiger Silo files.
+
+---bradaverage.py---
+Developed by Brad Munson. This is an older version of an averaging procedure to
+map Octo-Tiger data into MESA. The latest version can directly read Silo files,
+where this script can only read plain ASCII text files.
+
+Here are the dependencies:
+numpy : Conda standard
+matplotlib : Conda standard
+time : Conda standard
+pandas : Conda standard
+helmholtz : available on Josiah's github (https://github.com/jschwab/python-helmholtz)
+scipy : Conda standard
+rcbtools : available on pip and github (https://github.com/bamunson/rcbtools)
+
+---spherical_average_bg.py---
+Developed by Brad Munson. This is the newer averaging procedure. It includes some
+of the same functions as the older bradaverage.py, but can read the Silo files.
+This example was used for Betelgeuse, where we averaged the angular momentum and
+entropy. The composition was imposed from the MESA giant model.
+
+Dependencies:
+Octo2Yt : included in this directory
+numpy : Conda standard
+matplotlib : Conda standard
+numba : available on conda or pip
+rcbtools : available on pip and github (https://github.com/bamunson/rcbtools)
+helmholtz : available on Josiah's github (https://github.com/jschwab/python-helmholtz)
